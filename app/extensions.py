@@ -5,3 +5,4 @@ from flask_cors import CORS
 db = MySQL()
 jwt = JWTManager()
 cors = CORS()
+
