@@ -19,18 +19,18 @@ swagger_template = {
 }
 swagger = Swagger(app, template=swagger_template)
 
-# def check_database_connection():
-#     with app.app_context():
-#         try:
-#             # Usamos el objeto db de flask_mysqldb para obtener la conexión
-#             conn = db.connection
-#             cursor = conn.cursor()
-#             cursor.execute("SELECT 1")  # consulta simple para validar conexión
-#             cursor.close()
-#             print("Conectado a la base de datos MySQL")
-#         except Exception as e:
-#             print("Error al conectar a la base de datos:", e)
-#             exit(1)
+def check_database_connection():
+    with app.app_context():
+        try:
+            # Usamos el objeto db de flask_mysqldb para obtener la conexión
+            conn = db.connection
+            cursor = conn.cursor()
+            cursor.execute("SELECT 1")  # consulta simple para validar conexión
+            cursor.close()
+            print("Conectado a la base de datos MySQL")
+        except Exception as e:
+            print("Error al conectar a la base de datos:", e)
+            exit(1)
 
 if __name__ == '__main__':
     #check_database_connection()
