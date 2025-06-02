@@ -1,0 +1,9 @@
+Flask==2.3.3
+Flask-Cors==4.0.0
+Flask-MySQLdb==1.0.1
+Flask-JWT-Extended
+mysql-connector-python
+python-dotenv==1.0.1
+Werkzeug==3.0.1
+PyJWT==2.8.0
+flasgger
