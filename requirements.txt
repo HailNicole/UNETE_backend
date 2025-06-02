@@ -7,3 +7,11 @@ python-dotenv==1.0.1
 Werkzeug==3.0.1
 PyJWT==2.8.0
 flasgger
+
+#Crear entorno virtual: python3 -m venv venv
+                    #   source venv/bin/activate
+#Instalar los requerimientos: pip install -r requirements.txt
+#Si no funciona mysql, instalar lo siguiente: 
+#sudo apt update
+#sudo apt install build-essential libmysqlclient-dev pkg-config
+#Luego instalar en la terminal: pip install "Flask<2.3" o pip install flask-mysqldb
