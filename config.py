@@ -7,7 +7,7 @@ class Config:
     # Configuración para flask_mysqldb
     MYSQL_HOST = os.environ.get('MYSQL_HOST', 'localhost')
     MYSQL_USER = os.environ.get('MYSQL_USER', 'root')
-    MYSQL_PASSWORD = os.environ.get('MYSQL_PASSWORD', 'password')
+    MYSQL_PASSWORD = os.environ.get('MYSQL_PASSWORD', '')
     MYSQL_DB = os.environ.get('MYSQL_DB', 'mydatabase')
     MYSQL_PORT = int(os.environ.get('MYSQL_PORT', 3306))  # Opcional, puerto por defecto 3306
 

@@ -14,7 +14,7 @@ from app.utils.helpers import allowed_file
 products_bp = Blueprint('products', __name__)
 
 @products_bp.route('/product', methods=['POST'])
-@jwt_required()
+#@jwt_required()
 def route_insert_product():
     """
     Crear nuevo producto

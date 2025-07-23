@@ -33,5 +33,5 @@ def check_database_connection():
             exit(1)
 
 if __name__ == '__main__':
-    #check_database_connection()
+    check_database_connection()
     app.run(debug=True, port=3000)
